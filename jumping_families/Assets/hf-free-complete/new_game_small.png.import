@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/new_game_small.png-43ca3d450b9cf6a19b0ee9160cc67ca3.stex"
+path="res://.import/new_game_small.png-76eabc9ecc6294afd125c208d36ffd7d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hf-free-complete/new_game_small.png"
-dest_files=[ "res://.import/new_game_small.png-43ca3d450b9cf6a19b0ee9160cc67ca3.stex" ]
+source_file="res://Assets/hf-free-complete/new_game_small.png"
+dest_files=[ "res://.import/new_game_small.png-76eabc9ecc6294afd125c208d36ffd7d.stex" ]
 
 [params]
 
