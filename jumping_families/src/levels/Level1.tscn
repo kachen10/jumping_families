@@ -1,12 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Assets/tiles/Assets.png" type="Texture" id=1]
-[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/tiles/Assets.png" type="Texture" id=1]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/levels/Platforms.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Actors/Empty.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Assets/bg.png" type="Texture" id=5]
-[ext_resource path="res://src/levels/Level1.gd" type="Script" id=6]
+[ext_resource path="res://src/levels/Ladder.gd" type="Script" id=5]
 [ext_resource path="res://Assets/ladder.png" type="Texture" id=7]
-[ext_resource path="res://src/levels/AreaComplete.gd" type="Script" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -59,25 +58,9 @@ points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 2/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 10, 12.9342 )
+extents = Vector2( 10, 13.2093 )
 
 [node name="Level1" type="Node2D"]
-script = ExtResource( 6 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = -100
-
-[node name="Background" type="TextureRect" parent="CanvasLayer"]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_right = -224.0
-margin_bottom = -200.0
-texture = ExtResource( 5 )
-stretch_mode = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 1.00376, 0.999862 )
@@ -91,37 +74,25 @@ position = Vector2( 0, 3.05176e-05 )
 scale = Vector2( 1.00376, 0.999862 )
 
 [node name="Empty" parent="." instance=ExtResource( 4 )]
-
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 360.616, 1399.04 )
-
-[node name="Player1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 198.375, 1492.91 )
-
-[node name="Player2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 609.189, 878.816 )
+position = Vector2( 388.276, 1300.75 )
 scale = Vector2( 1.00376, 0.999862 )
 
-[node name="Player3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 255.728, 684.911 )
-scale = Vector2( 1.00376, 0.999862 )
+[node name="Ladder" type="Area2D" parent="."]
+position = Vector2( 78.8495, 94.9994 )
+script = ExtResource( 5 )
 
-[node name="Player4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 538.275, 415.661 )
-scale = Vector2( 1.00376, 0.999862 )
-
-[node name="Player5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 256.007, 172.685 )
-scale = Vector2( 1.00376, 0.999862 )
-
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource( 8 )
-
-[node name="Sprite" type="Sprite" parent="Area2D"]
-position = Vector2( 80, 96 )
+[node name="Sprite" type="Sprite" parent="Ladder"]
 texture = ExtResource( 7 )
-region_rect = Rect2( 0, 0, 32, 32 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 80, 97.2882 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ladder"]
+position = Vector2( 0, 2.77388 )
 shape = SubResource( 4 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 215.334, 1509.45 )
+
+[node name="Player2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 183.334, 1264 )
+
+[node name="Player3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 241.648, 175.682 )
