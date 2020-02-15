@@ -4,6 +4,11 @@ export var inViewport: bool
 var frozen = true;
 var change := 1.0
 
+export var stomp_impulse: = 1000.0
+
+func _on_EnemyDetector_area_entered(area: Area2D) -> void:
+	_velocity = calculate_stomp_velocity(_velocity, stomp_impulse)
+
 func _on_player_exited(viewport: Viewport) -> void:
 	frozen = true
 	inViewport = false
@@ -61,3 +66,10 @@ func calculate_move_velocity(
 	if is_jump_interrupted:
 		out.y = 0.0
 	return out
+
+func calculate_stomp_velocity(linear_velocity: Vector2, impulse: float) -> Vector2:
+	var out: = linear_velocity
+	out.y = -impulse
+	return out
+
+
