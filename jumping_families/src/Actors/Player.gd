@@ -3,10 +3,12 @@ extends Actor
 func _physics_process(delta: float) -> void:
 	var is_jump_interrupted := Input.is_action_just_released("jump") and _velocity.y < 0.0
 	var direction: = get_direction()
+	if Input.is_action_just_released("jump"):
+		set_collision_mask_bit(2, false)
+	elif _velocity.y > 0:
+		set_collision_mask_bit(2, true)
 	_velocity = calculate_move_velocity(_velocity, direction, speed, is_jump_interrupted)
 	_velocity = move_and_slide(_velocity, FLOOR_NORMAL)
-	if _velocity.y < 0:
-		set_collision_mask_bit(2, false)
 
 func get_direction() -> Vector2:
 	var movement_val = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
