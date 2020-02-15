@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/matchup-pro-v1.1.png-be28329cea87549083fe2f1c8fb9182b.stex"
+path="res://.import/matchup-pro-v1.1.png-857e25a07bef509b80e14925d4533400.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hf-free-complete/matchup-pro-v1.1/matchup-pro-v1.1.png"
-dest_files=[ "res://.import/matchup-pro-v1.1.png-be28329cea87549083fe2f1c8fb9182b.stex" ]
+source_file="res://Assets/hf-free-complete/matchup-pro-v1.1/matchup-pro-v1.1.png"
+dest_files=[ "res://.import/matchup-pro-v1.1.png-857e25a07bef509b80e14925d4533400.stex" ]
 
 [params]
 
