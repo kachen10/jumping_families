@@ -46,7 +46,6 @@ points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 [node name="Wall" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2( -8, 0 )
 scale = Vector2( 1.00376, 0.999862 )
 tile_set = SubResource( 3 )
 cell_size = Vector2( 32, 32 )

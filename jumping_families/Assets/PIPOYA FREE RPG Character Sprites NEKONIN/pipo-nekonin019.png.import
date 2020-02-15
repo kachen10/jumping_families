@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pipo-nekonin019.png-bcab241effde1d3b1b6b100af50cf108.stex"
+path="res://.import/pipo-nekonin019.png-f571fee17eaab35cb2a8d372aae9fc41.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PIPOYA FREE RPG Character Sprites NEKONIN/pipo-nekonin019.png"
-dest_files=[ "res://.import/pipo-nekonin019.png-bcab241effde1d3b1b6b100af50cf108.stex" ]
+source_file="res://assets/PIPOYA FREE RPG Character Sprites NEKONIN/pipo-nekonin019.png"
+dest_files=[ "res://.import/pipo-nekonin019.png-f571fee17eaab35cb2a8d372aae9fc41.stex" ]
 
 [params]
 
