@@ -7,7 +7,7 @@
 [ext_resource path="res://src/levels/Path2D.gd" type="Script" id=5]
 [ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=6]
 [ext_resource path="res://src/Actors/Enemy.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/levels/Pause.gd" type="Script" id=8]
+[ext_resource path="res://src/title_screen/PauseMenu.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -103,13 +103,6 @@ script = ExtResource( 6 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 100
 
-[node name="Pause" type="Control" parent="CanvasLayer"]
+[node name="Control" parent="CanvasLayer" instance=ExtResource( 8 )]
 pause_mode = 2
-margin_left = -294.0
-margin_top = 1000.0
-margin_right = 724.0
-margin_bottom = 1594.0
-script = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+visible = false

@@ -7,19 +7,25 @@ func _ready():
 
 func _physics_process(delta):
 	if $MarginContainer/VBoxContainer/VBoxContainer/Resume.is_hovered():
-		get_tree().get_current_scene().get_name()
 		$MarginContainer/VBoxContainer/VBoxContainer/Resume.grab_focus()
 	if $MarginContainer/VBoxContainer/VBoxContainer/Exit.is_hovered():
-		get_tree().get_current_scene().get_name()
 		$MarginContainer/VBoxContainer/VBoxContainer/Exit.grab_focus()
-
+		
+func _input(event):
+	if event.is_action_pressed("pause"):
+		var new_pause_state = not get_tree().paused;
+		get_tree().paused = new_pause_state	
+		if new_pause_state:
+			show()
+		else:
+			hide()
+		
 func _on_Resume_pressed():
-	print("resume pressed")
-	get_tree().change_scene("res://src/levels/Level1.tscn")
+	if get_tree().paused:
+		get_tree().paused = false
+	hide()
 
 
 func _on_Exit_pressed():
-	print(get_tree().get_current_scene().get_name())
-	print("exit pressed")
 	get_tree().quit()
 
