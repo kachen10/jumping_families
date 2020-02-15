@@ -3,11 +3,12 @@
 [ext_resource path="res://src/Actors/Actor.gd" type="Script" id=1]
 [ext_resource path="res://assets/PIPOYA FREE RPG Character Sprites NEKONIN/pipo-nekonin020.png" type="Texture" id=2]
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="CapsuleShape2D" id=2]
 radius = 16.0
 height = 0.0
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
+resource_name = "walk_left"
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("sprite:frame")
@@ -51,14 +52,14 @@ frame = 8
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2( 16, 16 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/walk_left = SubResource( 2 )
+anims/walk_left = SubResource( 1 )
 anims/walk_right = SubResource( 3 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 16, 16 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
