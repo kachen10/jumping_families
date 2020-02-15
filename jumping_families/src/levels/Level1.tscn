@@ -7,6 +7,7 @@
 [ext_resource path="res://src/levels/Path2D.gd" type="Script" id=5]
 [ext_resource path="res://src/Actors/Enemy.gd" type="Script" id=6]
 [ext_resource path="res://src/Actors/Enemy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/title_screen/PauseMenu.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -135,3 +136,10 @@ collision_layer = 2
 shape = SubResource( 7 )
 [connection signal="area_entered" from="Player2/EnemyDetector2" to="Player2" method="_on_EnemyDetector_area_entered"]
 [connection signal="body_entered" from="Path2D/Path/Enemy/StompDetector" to="Path2D/Path/Enemy" method="_on_StompDetector_body_entered"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource( 8 )]
+pause_mode = 2
+visible = false
