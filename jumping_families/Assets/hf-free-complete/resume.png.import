@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/resume.png-8eb60e67283bc96d252306c6de3f1184.stex"
+path="res://.import/resume.png-1fdbd0b98a5e9c6087d199022e8139a1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hf-free-complete/resume.png"
-dest_files=[ "res://.import/resume.png-8eb60e67283bc96d252306c6de3f1184.stex" ]
+source_file="res://Assets/hf-free-complete/resume.png"
+dest_files=[ "res://.import/resume.png-1fdbd0b98a5e9c6087d199022e8139a1.stex" ]
 
 [params]
 

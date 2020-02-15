@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/tiles/Assets.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -134,8 +134,6 @@ collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/Path/Enemy/StompDetector"]
 shape = SubResource( 7 )
-[connection signal="area_entered" from="Player2/EnemyDetector2" to="Player2" method="_on_EnemyDetector_area_entered"]
-[connection signal="body_entered" from="Path2D/Path/Enemy/StompDetector" to="Path2D/Path/Enemy" method="_on_StompDetector_body_entered"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 100
@@ -143,3 +141,5 @@ layer = 100
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 8 )]
 pause_mode = 2
 visible = false
+[connection signal="area_entered" from="Player2/EnemyDetector2" to="Player2" method="_on_EnemyDetector_area_entered"]
+[connection signal="body_entered" from="Path2D/Path/Enemy/StompDetector" to="Path2D/Path/Enemy" method="_on_StompDetector_body_entered"]
