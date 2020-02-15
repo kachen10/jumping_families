@@ -3,7 +3,7 @@ extends Actor
 func _physics_process(delta: float) -> void:
 	var is_jump_interrupted := Input.is_action_just_released("jump") and _velocity.y < 0.0
 	var direction: = get_direction()
-	if Input.is_action_just_released("jump"):
+	if Input.is_action_pressed("jump") && !is_on_floor():
 		set_collision_mask_bit(2, false)
 	elif _velocity.y > 0:
 		set_collision_mask_bit(2, true)
