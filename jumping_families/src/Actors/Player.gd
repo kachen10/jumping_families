@@ -8,13 +8,13 @@ func _on_player_exited(viewport: Viewport) -> void:
 	frozen = true
 	inViewport = false
 
-func _on_Player_entered(viewport: Viewport) -> void:
+func _on_player_entered(viewport: Viewport) -> void:
 	frozen = false
 	inViewport = true
 
 func _ready() -> void:
 	show()
-	if position.y > 1200:
+	if position.y > 1100:
 		frozen = false;
 
 func _physics_process(delta: float) -> void:

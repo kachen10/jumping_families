@@ -11,7 +11,7 @@ height = 10.2478
 length = 0.8
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("../Player/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -27,7 +27,7 @@ tracks/0/keys = {
 length = 0.8
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("../Player/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -65,9 +65,13 @@ shape = SubResource( 1 )
 anims/walk_left = SubResource( 2 )
 anims/walk_right = SubResource( 3 )
 
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 0.277115, 4.11505 )
 shape = SubResource( 4 )
+[connection signal="viewport_entered" from="VisibilityEnabler2D" to="." method="_on_player_entered"]
+[connection signal="viewport_exited" from="VisibilityEnabler2D" to="." method="_on_player_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
