@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EquipmentPro.svg-0cc55d0c4decacfd05f0dcfe2688b9cf.stex"
+path="res://.import/EquipmentPro.svg-c34dec3cba6c335c5fb2d64c0e2524f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hf-free-complete/equipment-pro-v1.1/EquipmentPro.svg"
-dest_files=[ "res://.import/EquipmentPro.svg-0cc55d0c4decacfd05f0dcfe2688b9cf.stex" ]
+source_file="res://Assets/hf-free-complete/equipment-pro-v1.1/EquipmentPro.svg"
+dest_files=[ "res://.import/EquipmentPro.svg-c34dec3cba6c335c5fb2d64c0e2524f8.stex" ]
 
 [params]
 

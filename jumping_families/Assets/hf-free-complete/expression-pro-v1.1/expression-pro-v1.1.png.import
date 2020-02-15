@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/expression-pro-v1.1.png-9764b7a18e16603727061358fdb5a909.stex"
+path="res://.import/expression-pro-v1.1.png-22c8e7716a2fd77a0ccbca05a6b96bfd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hf-free-complete/expression-pro-v1.1/expression-pro-v1.1.png"
-dest_files=[ "res://.import/expression-pro-v1.1.png-9764b7a18e16603727061358fdb5a909.stex" ]
+source_file="res://Assets/hf-free-complete/expression-pro-v1.1/expression-pro-v1.1.png"
+dest_files=[ "res://.import/expression-pro-v1.1.png-22c8e7716a2fd77a0ccbca05a6b96bfd.stex" ]
 
 [params]
 
