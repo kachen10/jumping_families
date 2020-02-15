@@ -1,8 +1,7 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://assets/tiles/Assets.png" type="Texture" id=1]
-[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/levels/Platforms.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/tiles/Assets.png" type="Texture" id=1]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Actors/Empty.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/bg.png" type="Texture" id=5]
 [ext_resource path="res://src/levels/Level1.gd" type="Script" id=6]
@@ -93,25 +92,25 @@ scale = Vector2( 1.00376, 0.999862 )
 
 [node name="Empty" parent="." instance=ExtResource( 4 )]
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 360.616, 1399.04 )
 
-[node name="Player1" parent="." instance=ExtResource( 2 )]
+[node name="Player1" parent="." instance=ExtResource( 3 )]
 position = Vector2( 198.375, 1492.91 )
 
-[node name="Player2" parent="." instance=ExtResource( 2 )]
+[node name="Player2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 609.189, 878.816 )
 scale = Vector2( 1.00376, 0.999862 )
 
-[node name="Player3" parent="." instance=ExtResource( 2 )]
+[node name="Player3" parent="." instance=ExtResource( 3 )]
 position = Vector2( 255.728, 684.911 )
 scale = Vector2( 1.00376, 0.999862 )
 
-[node name="Player4" parent="." instance=ExtResource( 2 )]
+[node name="Player4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 538.275, 415.661 )
 scale = Vector2( 1.00376, 0.999862 )
 
-[node name="Player5" parent="." instance=ExtResource( 2 )]
+[node name="Player5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 256.007, 172.685 )
 scale = Vector2( 1.00376, 0.999862 )
 

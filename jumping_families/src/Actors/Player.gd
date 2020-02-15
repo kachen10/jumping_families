@@ -1,8 +1,8 @@
 extends Actor
 
-<<<<<<< HEAD
 export var inViewport: bool
 var frozen = true;
+var change := 1.0
 
 func _on_player_exited(viewport: Viewport) -> void:
 	frozen = true
@@ -27,15 +27,6 @@ func _physics_process(delta: float) -> void:
 			set_collision_mask_bit(2, true)
 		_velocity = calculate_move_velocity(_velocity, direction, speed, is_jump_interrupted)
 		_velocity = move_and_slide(_velocity, FLOOR_NORMAL)
-=======
-var change := 1.0
-
-func _physics_process(delta: float) -> void:
-	var is_jump_interrupted := Input.is_action_just_released("jump") and _velocity.y < 0.0
-	var direction: = get_direction()
-	_velocity = calculate_move_velocity(_velocity, direction, speed, is_jump_interrupted)
-	_velocity = move_and_slide(_velocity, FLOOR_NORMAL)
->>>>>>> 8f247c07a2d18b268eab5e7c8afe74b091574e24
 
 func get_direction() -> Vector2:
 	var movement_val = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")

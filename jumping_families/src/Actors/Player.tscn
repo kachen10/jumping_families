@@ -73,11 +73,7 @@ position = Vector2( 0.277115, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 0.277115, 4.11505 )
-<<<<<<< HEAD
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 [connection signal="viewport_entered" from="VisibilityEnabler2D" to="." method="_on_Player_entered"]
 [connection signal="viewport_exited" from="VisibilityEnabler2D" to="." method="_on_player_exited"]
-=======
-shape = SubResource( 4 )
->>>>>>> 8f247c07a2d18b268eab5e7c8afe74b091574e24
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
