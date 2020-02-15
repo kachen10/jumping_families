@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/title.png-fcf9e546582c39d4aa212215908f3904.stex"
+path="res://.import/title.png-34b9cb2a293cff986f51cc258cd959bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hf-free-complete/title.png"
-dest_files=[ "res://.import/title.png-fcf9e546582c39d4aa212215908f3904.stex" ]
+source_file="res://Assets/hf-free-complete/title.png"
+dest_files=[ "res://.import/title.png-34b9cb2a293cff986f51cc258cd959bb.stex" ]
 
 [params]
 
