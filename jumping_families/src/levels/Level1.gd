@@ -1,6 +1,6 @@
 extends Node2D
 
-var num_relatives = 4
+var num_relatives = 3
 var in_viewPort: int
 
 func _physics_process(delta: float) -> void:

@@ -4,7 +4,7 @@ var current_position = Vector2(0, 1600)
 var end_game: bool = false
 	
 func _physics_process(delta: float) -> void:
-	current_position.y -= 6
+	current_position.y -= 1.0
 	set_position(current_position)
 	check_camera()
 
