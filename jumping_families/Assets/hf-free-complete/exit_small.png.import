@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/exit_small.png-f07002edd61f25d6c2b94b8b619f2a04.stex"
+path="res://.import/exit_small.png-7f7216cb25e5f6aa8b1a9d19e430de9d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/hf-free-complete/exit_small.png"
-dest_files=[ "res://.import/exit_small.png-f07002edd61f25d6c2b94b8b619f2a04.stex" ]
+source_file="res://assets/hf-free-complete/exit_small.png"
+dest_files=[ "res://.import/exit_small.png-7f7216cb25e5f6aa8b1a9d19e430de9d.stex" ]
 
 [params]
 
