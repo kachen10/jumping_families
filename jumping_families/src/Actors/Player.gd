@@ -1,5 +1,18 @@
 extends Actor
 
+export var inViewport: bool
+
+func _on_player_exited(viewport: Viewport) -> void:
+	hide()
+	inViewport = false
+
+func _on_Player_entered(viewport: Viewport) -> void:
+	show()
+	inViewport = true
+
+func _ready() -> void:
+	hide()
+
 func _physics_process(delta: float) -> void:
 	var is_jump_interrupted := Input.is_action_just_released("jump") and _velocity.y < 0.0
 	var direction: = get_direction()
