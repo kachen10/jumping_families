@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CompassPro.svg-204447dedd4590bcf55f1799f0847e85.stex"
+path="res://.import/CompassPro.svg-ed1cd563a65d81397de92871285e58ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/hf-free-complete/compass-pro-v1.1/CompassPro.svg"
-dest_files=[ "res://.import/CompassPro.svg-204447dedd4590bcf55f1799f0847e85.stex" ]
+source_file="res://assets/hf-free-complete/compass-pro-v1.1/CompassPro.svg"
+dest_files=[ "res://.import/CompassPro.svg-ed1cd563a65d81397de92871285e58ea.stex" ]
 
 [params]
 
