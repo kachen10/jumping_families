@@ -4,6 +4,8 @@ var minions = Array()
 export var num_relatives = 2
 var in_viewPort: int
 
+# nothing is running here need to fix it
+
 func _ready() -> void:
 	set_process(true)
 

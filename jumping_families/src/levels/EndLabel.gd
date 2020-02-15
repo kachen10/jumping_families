@@ -1,5 +1,6 @@
 extends RichTextLabel
 
+# not working
 func _ready() -> void:
 #	print(global.score)
 	var format_score = "%s"
