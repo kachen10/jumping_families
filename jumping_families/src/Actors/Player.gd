@@ -6,6 +6,8 @@ var change := 1.0
 
 export var stomp_impulse: = 1000.0
 
+onready var ASP = get_node("Audio Effect/AudioStreamPlayer2D")
+
 func _on_EnemyDetector_area_entered(area: Area2D) -> void:
 	_velocity = calculate_stomp_velocity(_velocity, stomp_impulse)
 
@@ -44,7 +46,11 @@ func get_direction() -> Vector2:
 		$AnimationPlayer.set_current_animation("")
 	change = -1.0 if Input.is_action_just_pressed("jump") and is_on_floor() else 1.0
 	if Input.is_action_pressed("jump") || change == -1.0:
+		
+		
+		
 		set_collision_mask_bit(2, false)
+
 	else:
 		set_collision_mask_bit(2, true)
 	return Vector2(

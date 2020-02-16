@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Jumping Families"
-run/main_scene="res://src/levels/Level1.tscn"
+run/main_scene="res://src/title_screen/MainMenu.tscn"
 config/icon="res://icon.png"
 
 [input]
@@ -59,4 +59,5 @@ pause={
 
 [rendering]
 
+environment/default_clear_color=Color( 0.0784314, 0.0352941, 0.0352941, 1 )
 environment/default_environment="res://default_env.tres"

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pause_mid.png-517f084baa916cf4d59ba8b60efc29a5.stex"
+path="res://.import/pause_mid.png-cd14f4f61e5c39cb946cf5c65a296664.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hf-free-complete/pause_mid.png"
-dest_files=[ "res://.import/pause_mid.png-517f084baa916cf4d59ba8b60efc29a5.stex" ]
+source_file="res://Assets/hf-free-complete/pause_mid.png"
+dest_files=[ "res://.import/pause_mid.png-cd14f4f61e5c39cb946cf5c65a296664.stex" ]
 
 [params]
 
