@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/meow.wav-d218f76d05d01d034bc4bda8ed289e78.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/platformer_jumping/meow.wav"
+dest_files=[ "res://.import/meow.wav-d218f76d05d01d034bc4bda8ed289e78.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
